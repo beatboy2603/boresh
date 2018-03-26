@@ -158,7 +158,7 @@ public class ReviewHandler {
     
         if(stat > 0) {
             // send to review owner
-            for(Map.Entry<Session, String> entry : doReviewMap.entrySet()) {
+            for(Map.Entry<Session, String> entry : reviewMap.entrySet()) {
                 if(review.getBookID().equals(entry.getValue())) {
                     sendToSession(entry.getKey(), createReviewUpdateMsg(review));
                 }
