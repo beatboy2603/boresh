@@ -1,0 +1,103 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 21, 2018, 12:21:11 AM
+    Author     : asus
+*/
+
+div#container-main {
+    width: 80%;
+    margin: auto;
+}
+div#wrapper-book {
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+}
+div.wrapper-reviews {
+    padding: 5px;
+}
+
+div.wrapper-left {
+    border: 1px solid #d0d0d0;
+    border-radius: 3px;
+    box-shadow: 0px 0px 2px 0px #000;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+div.wrapper-right {
+    display: flex;
+    align-items: center;
+    flex: 3.5;
+    padding: 10px 0px 10px 30px;
+}
+div.wrapper-description {
+    border: 1px solid #afafaf;
+    padding: 10px 10px;
+    border-radius: 3px;
+    font-style: italic;
+    background: linear-gradient(to top, #ffe5ca , #fff7ed);
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+div.wrapper-description p {
+    flex-grow: 1;
+    text-align: justify;
+}
+div.box-categories {
+    font-size: 0.8em;
+    color: #ababab;
+    text-align: right;
+}
+
+div.box-btn-write-review {
+    text-align: center;
+    background: linear-gradient(to top, #3f88f1 , #73aadc);
+    border-radius: 3px 3px 0px 0px;
+}
+div.box-btn-write-review a {
+    display: block;
+    padding: 8px;
+    color: white;
+}
+
+div.wrapper-overview {
+    background: linear-gradient(to top, #eaeaea , #f5f5f5);
+    flex-grow: 1;
+}
+div.box-title {
+    padding: 10px;
+}
+
+div.box-thumbnail {
+    text-align: center;
+    border-width: 2px 0px 0px;
+    border-color: #d0d0d0;
+    border-style: solid;
+    padding: 10px 15px 0px;
+}
+
+div.box-rating {
+    padding: 5px 0px 13px;
+}
+
+span.stars {
+    margin: auto;
+}
+span.stars, span.stars span {
+    display: block;
+    background: url(../stars.png) 0 -16px repeat-x;
+    width: 80px;
+    height: 16px;
+}
+
+span.stars span {
+    background-position: 0 0;
+}

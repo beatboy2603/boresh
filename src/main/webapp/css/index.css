@@ -1,0 +1,147 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 15, 2018, 9:46:18 PM
+    Author     : asus
+*/
+
+div#container-main {
+    width: 80%;
+    margin: 0px auto 10px auto;
+    overflow: hidden;
+}
+div#container-left {
+    margin: auto;
+    padding: 10px 0;
+    border-width: 1px 0px;
+    border-color: #b5b5b5;
+    border-style: solid;
+    width: 75%;
+    float: left;
+}
+div#container-right {
+    width: 20%;
+    float: right;
+}
+    div.container-review:not(:last-of-type) {
+        margin-bottom: 5px;
+    }
+        div.box-review {
+            border-radius: 3px;
+            background-color: #c4deff;
+            padding: 6px 0px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-flow: row;
+        }
+            div.group-info {
+                height: inherit;
+            }
+            div.group-info:not(:last-of-type) {
+                border-right: 1px solid white;
+            }
+            div.group-info-first {
+                display: flex;
+                flex-direction: column;
+            }
+            div.group-info-second {
+                text-align: center;
+            }
+            div.group-info-second img {
+                width: 60px;
+            }
+                div.field-title {
+                    font-size: 1.4em;
+                    cursor: pointer;
+                }
+                div.field-title a {
+                    display: block;
+                    color: #0a2754;
+                }
+                div.field-title a:hover {
+                    text-decoration: none;
+                    opacity: 0.8;
+                }
+                div.field-content {
+                    flex-grow: 1;
+                }
+                div.field-stat {
+                    float: left;
+                }
+                div.field-owner-date {
+                    display: flex;
+                    align-items: baseline;
+                    float: right;
+                }
+                    span.field-owner-name {
+                        font-weight: bold;
+                        color: #4B4FFF;
+                    }
+                    span.seperator {
+                        padding: 0px 5px;
+                    }
+                    span.field-date {
+                        font-size: 0.8em;
+                    }
+
+                    @media (max-width: 768px) {
+                        div.box-review {
+                            display: block;
+                        }
+                        div.group-info:not(:last-of-type) {
+                            border-right: 0px;
+                            border-bottom: 1px solid white;
+                        }
+                    }
+
+    div.right-item {
+        margin-bottom: 10px;
+    }
+        div#container-search {
+            padding: 10px;
+            background-color: #d0d0d0;
+            border-radius: 3px;
+        }
+        div#container-refresh {
+            border: 1px solid #dadada;
+            border-radius: 3px;
+            background: linear-gradient(to top, #e0e0e0, #f7f7f7);
+            cursor: pointer;
+            padding: 5px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            max-width: 100px;
+        }
+        div#container-refresh:hover {
+            background: linear-gradient(to top, #ececec, #f7f7f7);
+        }
+        div#container-refresh:active {
+            background: linear-gradient(to top, #f7f7f7, #e0e0e0);
+        }
+        div#container-refresh > div {}
+            div#box-refresh {
+                color: #404040;
+                flex: 1;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            div#box-new-rw {
+                background-color: red;
+                color: white;
+                border-radius: 50%;
+                font-size: 0.8em;
+                font-weight: bold;
+                width: 20px;
+                height: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                float: right;
+            }
+    
+        
